@@ -178,9 +178,7 @@ const QuizDetail = () => {
                             </div>
                         </div>
                     ) : (
-                        <h1 className="text-2xl font-semibold text-white mb-4 text-center">
-                            No questions available for this quiz.
-                        </h1>
+                        <h1 className="text-2xl font-semibold text-white mb-4 text-center"></h1>
                     )}
 
                     {submitted && (

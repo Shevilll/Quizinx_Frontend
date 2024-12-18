@@ -59,9 +59,7 @@ const PlayQuiz = () => {
                         ))}
                     </ul>
                 ) : (
-                    <p className="text-white text-lg text-center">
-                        No quizzes available.
-                    </p>
+                    <p className="text-white text-lg text-center"></p>
                 )}
             </div>
         </div>
