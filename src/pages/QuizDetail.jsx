@@ -14,12 +14,12 @@ const QuizDetail = () => {
 
     useEffect(() => {
         axios
-            .get(`http://localhost:8000/api/v1/quiz${quiz_id}/`)
+            .get(`https://quizinx-backend.onrender.com/api/v1/quiz${quiz_id}/`)
             .then((response) => {
                 setQuizDetails(response.data);
                 axios
                     .get(
-                        `http://localhost:8000/api/v1/quizquestions/${quiz_id}/`
+                        `https://quizinx-backend.onrender.com/api/v1/quizquestions/${quiz_id}/`
                     )
                     .then((res) => {
                         setQuestions(res.data);

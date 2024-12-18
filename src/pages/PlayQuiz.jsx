@@ -9,7 +9,7 @@ const PlayQuiz = () => {
     useEffect(() => {
         // Fetch quiz data when the component mounts
         axios
-            .get("http://localhost:8000/api/v1/quiz")
+            .get("https://quizinx-backend.onrender.com/api/v1/quiz")
             .then((response) => {
                 setQuizzes(response.data); // Update the state with the fetched data
             })
